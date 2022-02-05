@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>FlyAway</display-name>
+  <servlet>
+  	<servlet-name>homeservlet</servlet-name>
+  	<servlet-class>com.flyaway.HomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>homeservlet</servlet-name>
+  	<url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>regservlet1</servlet-name>
+  	<servlet-class>com.flyaway.RegServlet1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>regservlet1</servlet-name>
+  	<url-pattern>/RegServlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginservlet1</servlet-name>
+  	<servlet-class>com.flyaway.LoginServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginservlet1</servlet-name>
+  	<url-pattern>/LoginServlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminservlet</servlet-name>
+  	<servlet-class>com.flyaway.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>adminservlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>flight_show</servlet-name>
+  	<servlet-class>com.flyaway.Flight_Show</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>flight_show</servlet-name>
+  	<url-pattern>/Flight_Show</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>flight_price</servlet-name>
+  	<servlet-class>com.flyaway.Flight_Price</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>flight_price</servlet-name>
+  	<url-pattern>/Flight_Price</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>ticket_print</servlet-name>
+  	<servlet-class>com.flyaway.Ticket_Print</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ticket_print</servlet-name>
+  	<url-pattern>/Ticket_Print</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>crud</servlet-name>
+  	<servlet-class>com.flyaway.Crud</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>crud</servlet-name>
+  	<url-pattern>/Crud</url-pattern>
+  </servlet-mapping>
+  
+ <servlet> 
+   	<servlet-name>insert_booking</servlet-name>
+  	<servlet-class>com.flyaway.Insert_Booking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert_booking</servlet-name>
+  	<url-pattern>/Insert_Booking</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>insert_enquiry</servlet-name>
+  	<servlet-class>com.flyaway.Insert_Enquiry</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert_enquiry</servlet-name>
+  	<url-pattern>/Insert_Enquiry</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>insert_flight</servlet-name>
+  	<servlet-class>com.flyaway.Insert_Flight</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert_flight</servlet-name>
+  	<url-pattern>/Insert_Flight</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet> 
+   	<servlet-name>insert_route</servlet-name>
+  	<servlet-class>com.flyaway.Insert_Route</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert_route</servlet-name>
+  	<url-pattern>/Insert_Route</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>read_admin</servlet-name>
+  	<servlet-class>com.flyaway.Read_Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>read_admin</servlet-name>
+  	<url-pattern>/Read_Admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+   	<servlet-name>update_admin</servlet-name>
+  	<servlet-class>com.flyaway.Update_Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update_admin</servlet-name>
+  	<url-pattern>/Update_Admin</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>admin.html</welcome-file>
+
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,137 @@
+</html><!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+*{
+box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	background:yellow;
+}
+
+nav{
+	background:#594846;
+	width:100%;
+	overflow:auto;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+
+li{
+	float:left;
+}
+nav a{
+	width:120px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background:#594848;
+	font-size:17px;
+	color:white;
+	padding:20px 10px;
+	font-family:Arial;
+}
+
+nav a:hover{
+	background:pink;
+	color:black;
+}
+	
+img {
+  border-radius: 50%;
+}
+
+
+h1{
+color:green;
+font-size:40px;
+}
+h2{
+color:blue;
+}
+
+h3{
+color:red;
+}
+
+
+</style>
+<title>Admin Page</title>
+</head>
+<body>
+<img src="https://www.indoorskydivingsource.com/assets/tunnel-logos/fly-away-logo.png" width="190" height="80">
+	<marquee>
+		<h1 id="heading">FlyAway</h1>
+	</marquee>
+	<hr>
+	
+	<nav>
+		<ul>
+			<li> <a href="admin.html">Home   </a>		    </li>
+			<li> <a href="NewRegistration.html">SignUp</a>			</li>
+			<li> <a href="Login.html">Login</a>			</li>
+			<li> <a href="admin.html">CRUD</a>			</li>
+		</ul>
+	</nav>
+<center>	
+<form action="Crud" method="post">
+
+<table class="container">
+
+<input type="radio" name="admin" value="insert"> Create</input>
+<input type="radio" name="admin" value="read"> Read</input>
+<input type="radio" name="admin" value="update"> Update</input>
+<input type="radio" name="admin" value="delete"> Delete</input>
+
+<tr>
+<label for="admin_table"><h2>Choose your Table:</label>
+  <select name="table" >
+    <option value="select">Select</option>
+    <option value="booking1">Booking</option>
+    <option value="enquiry">Enquiry</option>
+    <option value="flight">Flight</option>
+    <option value="registration">Registration</option>
+    <option value="route">Route</option>
+    </h2>
+  </select></tr>
+  <br>
+
+
+	
+	
+	<tr>
+		
+		<td><h2>Route ID:</h2></td>
+		<td><input type="NUMBER" name="route_id" placeholder="Enter flight Route ID"></td>
+	</tr>
+
+	<tr>
+		
+		<td><h2>Source CITY:</h2></td>
+		<td><input type="text" name="route_scity" placeholder="Enter available city"></td>
+	</tr>
+	
+	<tr>
+		
+		<td><h2>Destination CITY:</h2></td>
+		<td><input type="text" name="route_dcity" placeholder="Enter destination city"></td>
+	</tr>
+	
+	
+	</table>
+	
+	<input type="submit" name="SUBMIT"> &nbsp;&nbsp;   <input type="reset" name="RESET">
+	
+</form>	
+</center>
+
+</body>
+</html>

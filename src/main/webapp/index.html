@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+*{
+box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	background-image: url("https://media.nomadicmatt.com/2021/flighthub3.jpg");
+}
+
+nav{
+	background:#594848;
+	width:100%;
+	overflow:auto;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+
+li{
+	float:left;
+}
+nav a{
+	width:120px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	background:#594848;
+	font-size:17px;
+	color:white;
+	padding:20px 10px;
+	font-family:Arial;
+}
+
+nav a:hover{
+	background:pink;
+	color:black;
+}
+	
+img {
+  border-radius: 90%;
+}
+
+
+h1{
+color:green;
+font-size:40px;
+}
+h2{
+color:white;
+}
+
+h3{
+color:red;
+}
+
+
+</style>
+<title>HOME PAGEee</title>
+</head>
+<body>
+<img src="https://www.indoorskydivingsource.com/assets/tunnel-logos/fly-away-logo.png" width="190" height="80">
+	
+	<hr>
+	
+	<nav>
+		<ul>
+			<li> <a href="index.html">Home   </a>		    </li>
+			<li> <a href="NewRegistration.html">SignUp</a>			</li>
+			<li> <a href="Login.html">Login</a>			</li>
+			<li> <a href="contact.html">Contact</a>			</li>
+		</ul>
+	</nav>
+<center>	
+<form action="HomeServlet" method="post">
+
+<table class="container">
+
+	<tr>
+		
+		<td><h2>FROM CITY:</h2></td>
+	<!--	<td><input type="text" name="user_scity" placeholder="Enter your source city"></td>
+		-->
+		<td><select name="user_scity">
+    		<option value="PNBE">PNBE</option>
+    		<option value="NEW DELHI">NEW DELHI</option>
+    		<option value="GOA">GOA</option>
+    	</select></td>
+    	
+	</tr>
+	
+	<tr>
+		
+		<td><h2>TO CITY:</h2></td>
+	<!--  	<td><input type="text" name="user_dcity" placeholder="Enter your destination city"></td>
+			-->
+			
+			<td><select name="user_dcity">
+    		<option value="GOA">GOA</option>
+    		<option value="NEW DELHI">NEW DELHI</option>
+    		<option value="PNBE">PNBE</option>
+    	</select>
+    	</td>
+    	
+	
+	</tr>
+	
+	<tr>
+		
+		<td><h2>DATE:</h2></td>
+		<td><input type="date" name="user_date" ></td>
+	</tr>
+	
+	<tr>
+		
+		<td><h2>NUMBER OF TRAVELER:</h2></td>
+		<td><input type="NUMBER" name="user_no" placeholder="Enter your passenger number"></td>
+	</tr>
+	
+	</table>
+	
+	<input type="submit" name="SUBMIT"> &nbsp;&nbsp;   <input type="reset" name="RESET">
+	
+</form>	
+</center>
+</body>
+</html>
